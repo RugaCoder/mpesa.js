@@ -1,0 +1,37 @@
+    openapi: 3.0.0
+    info:
+      title: Nodejs OpenAPI mpesa implimentation library
+      description: Implimentation of MPESA openAPI in nodeJS for developers and organizations plug and play in their applications
+      contact:
+          name: Infolabz Mobile Money
+          url: http://infolabs.dev
+          email: fruganyumisa@gmail.com
+      license:
+          name: Apache 2.0
+          url: https://www.apache.org/licenses/LICENSE-2.0.html
+      version: 1.0.0
+
+    servers:
+        - url: https://openapi.m-pesa.com/sandbox/ipg/v2/
+          description: Testing environment server
+          variables:
+              port:
+                enum:
+                  - '443'
+                  - '8443'
+                default: '443'
+
+
+
+
+    paths:
+        /vodacomTZN/getSession/:
+            get:
+                description: Get for creating the API session token it takes encrypted API key for amn appllication
+                parameters:
+
+
+
+
+
+
